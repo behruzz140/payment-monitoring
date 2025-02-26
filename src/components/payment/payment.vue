@@ -12,6 +12,7 @@
           <label>Kategoriya:</label>
           <select v-model="expense.category" required>
             <option value="Oziq-ovqat">Oziq-ovqat</option>
+            <option value="buyum">Buyum xaridi</option>
             <option value="Transport">Transport</option>
             <option value="Ko'ngilochar">Ko'ngilochar</option>
             <option value="Kommunal">Kommunal</option>

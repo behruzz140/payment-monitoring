@@ -12,6 +12,7 @@
           <label>Kategoriya bo'yicha:</label>
           <select v-model="selectedCategory" @change="filterExpenses">
             <option value="">Barchasi</option>
+            <option value="buyum">Buyum xaridi</option>
             <option value="Transport">Transport</option>
             <option value="Oziq-ovqat">Oziq-ovqat</option>
             <option value="Kommunal">Kommunal</option>
