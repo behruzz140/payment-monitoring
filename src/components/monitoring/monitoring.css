@@ -1,0 +1,77 @@
+
+.expense-report {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.expense-report.dark-mode {
+  background: #2d2d2d;
+  color: #ffffff;
+}
+
+.total {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.dark-mode .total {
+  border-color: #404040;
+}
+
+.total h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.dark-mode .total h3 {
+  color: #ffffff;
+}
+
+.total p {
+  font-size: 24px;
+  color: #42b983;
+  font-weight: bold;
+}
+
+.category-summary h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.dark-mode .category-summary h3 {
+  color: #ffffff;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.dark-mode .category-item {
+  border-color: #404040;
+}
+
+.category-item:last-child {
+  border-bottom: none;
+}
+.expense-report-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.expense-report {
+  flex: 1;
+}
+
+.chart-container {
+  width: 400px;
+  height: 300px;
+}

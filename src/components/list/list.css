@@ -1,0 +1,121 @@
+.expense-list {
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.dark-mode {
+  color: #ffffff;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.date-filter, .category-filter {
+  flex: 1;
+  min-width: 200px;
+}
+
+.date-filter label, .category-filter label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.date-filter input, .category-filter select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.dark-mode .date-filter input,
+.dark-mode .category-filter select {
+  background: #1a1a1a;
+  border-color: #404040;
+  color: #ffffff;
+}
+
+.clear-filter {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 37px;
+}
+
+.clear-filter:hover {
+  background: #5a6268;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #ffffff;
+}
+
+.dark-mode table {
+  background: #2d2d2d;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark-mode th,
+.dark-mode td {
+  border-color: #404040;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+.dark-mode th {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.total-row {
+  background-color: #f8f9fa;
+  font-size: 1.1em;
+}
+
+.dark-mode .total-row {
+  background-color: #1a1a1a;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.no-expenses {
+  text-align: center;
+  color: #6c757d;
+  padding: 20px;
+}
+
+.dark-mode .no-expenses {
+  color: #a0a0a0;
+}

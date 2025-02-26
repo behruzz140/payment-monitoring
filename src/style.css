@@ -1,0 +1,50 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2c3e50;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #ffffff;
+}
+
+button {
+  transition: background-color 0.3s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #42b983;
+  box-shadow: 0 0 0 2px rgba(66, 185, 131, 0.1);
+}
+
+.dark-mode input:focus,
+.dark-mode select:focus {
+  border-color: #42b983;
+  box-shadow: 0 0 0 2px rgba(66, 185, 131, 0.2);
+}
