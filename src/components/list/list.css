@@ -6,6 +6,30 @@
   margin-right: auto;
 }
 
+.pagination-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.load-more,
+.load-less {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.load-more:hover,
+.load-less:hover {
+  background: #0056b3;
+}
+
 .dark-mode {
   color: #ffffff;
 }
@@ -21,20 +45,20 @@
   flex-wrap: wrap;
 }
 
-.date-filter, 
+.date-filter,
 .category-filter {
   flex: 1;
   min-width: 200px;
 }
 
-.date-filter label, 
+.date-filter label,
 .category-filter label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.date-filter input, 
+.date-filter input,
 .category-filter select {
   width: 100%;
   padding: 10px;
@@ -77,7 +101,8 @@ table {
   background: #2d2d2d;
 }
 
-th, td {
+th,
+td {
   padding: 14px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -110,9 +135,13 @@ th {
   background-color: #1a1a1a;
 }
 
+::placeholder {
+  color: #333;
+}
+
 .delete-btn {
   background: #dc3545;
-  color: white;
+  color: #fff;
   border: none;
   padding: 8px 12px;
   border-radius: 6px;
@@ -152,17 +181,17 @@ th {
     gap: 15px;
   }
 
-  .date-filter, 
+  .date-filter,
   .category-filter {
     width: 100%;
   }
 
-  .date-filter label, 
+  .date-filter label,
   .category-filter label {
     font-size: 14px;
   }
 
-  .date-filter input, 
+  .date-filter input,
   .category-filter select {
     width: 100%;
     padding: 12px;
@@ -182,7 +211,8 @@ th {
     overflow-x: auto;
   }
 
-  th, td {
+  th,
+  td {
     font-size: 14px;
     padding: 12px;
   }
@@ -198,4 +228,21 @@ th {
   .total-row {
     font-size: 16px;
   }
+}
+
+.date-filter input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.date-filter input::-webkit-calendar-picker-indicator {
+  filter: invert(0);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.date-filter input:hover {
+  background: inherit;
+  border-color: inherit;
 }

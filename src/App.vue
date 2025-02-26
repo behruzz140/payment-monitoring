@@ -2,10 +2,10 @@
   <div class="app-container" :class="{ 'dark-mode': isDarkMode }">
     <div class="theme-toggle">
       <div class="jurnal-dark">
-        <h1>Shaxsiy Xarajatlar Jurnali</h1>
-        <button class="dark-btn" @click="toggleTheme">
+        <h1>Xarajatlar jurnali</h1>
+        <!-- <button class="dark-btn" @click="toggleTheme">
           {{ isDarkMode ? '☀️' : '🌙' }}
-        </button>
+        </button> -->
       </div>
     </div>
     <Payment @add-expense="addExpense" />
@@ -61,7 +61,6 @@ export default {
 .jurnal-dark {
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .app-container {
