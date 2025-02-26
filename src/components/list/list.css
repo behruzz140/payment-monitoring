@@ -230,6 +230,47 @@ th {
   }
 }
 
+@media (max-width: 480px) {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  .delete-btn {
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .total-row {
+    font-size: 14px;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .clear-filter {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+}
+
 .date-filter input {
   appearance: none;
   -webkit-appearance: none;
